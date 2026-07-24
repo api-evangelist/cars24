@@ -1,8 +1,20 @@
 aid: cars24
 name: Cars24
-description: Cars24 is a company surfaced as a portfolio company of 500-global, softbank-vision-fund and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Cars24 (CARS24 Services Private Limited) is one of India's largest auto-tech
+  companies and an online marketplace for buying and selling used cars, operating
+  across India, the UAE, and Australia. Founded in 2015 and headquartered in
+  Gurgaon, Haryana, Cars24 is an RBI-registered NBFC that combines a used-car
+  transaction platform with financing, insurance, and vehicle-management services.
+  Its offerings include buying and selling pre-owned cars with 300+ point
+  inspections, fixed transparent pricing, warranties, and doorstep delivery;
+  AI-driven used-car valuation; new-car discovery; traffic challan checking and
+  payment; pre-delivery inspections across 220+ cities; vehicle history and
+  service-history reports; car scrapping; FASTag recharge; and used-car loans,
+  loan-against-car, and personal-loan products through Bikes24, Insure24, and
+  related brands. Cars24 is backed by SoftBank Vision Fund and 500 Global. It is
+  a consumer platform and does not publish a public developer API; this profile
+  captures its identity, agent-facing llms.txt, and security posture.
 url: https://raw.githubusercontent.com/api-evangelist/cars24/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,11 +23,31 @@ x-backed-by:
 - softbank-vision-fund
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://www.cars24.com/favicon.ico
 tags:
 - Company
+- Automotive
+- Used Cars
+- Marketplace
+- Auto Finance
+- Vehicle Inspection
+- Fintech
+- India
+- E-Commerce
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +56,31 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://cars24.com
+  url: https://www.cars24.com
+- type: About
+  url: https://www.cars24.com/about-us/
+- type: Blog
+  url: https://autonauts.cars24.com/
+- type: Support
+  url: https://www.cars24.com/faq/
+- type: TermsOfService
+  url: https://www.cars24.com/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://www.cars24.com/privacy-policy/
+- type: Careers
+  url: https://www.cars24.com/careers/
+- type: LLMsTxt
+  url: llms/cars24-llms.txt
+- type: WellKnown
+  url: well-known/cars24-well-known.yml
+- type: DomainSecurity
+  url: security/cars24-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/cars24-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.cars24.com/security/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,21 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of https://www.cars24.com/.well-known/*
+host: https://www.cars24.com
+documents:
+  - path: /.well-known/security.txt          # RFC 9116
+    status: 410
+  - path: /.well-known/openid-configuration   # OIDC discovery
+    status: 410
+  - path: /.well-known/oauth-authorization-server  # RFC 8414
+    status: 410
+  - path: /.well-known/api-catalog            # RFC 9727
+    status: 410
+  - path: /.well-known/ai-plugin.json         # OpenAI plugin manifest
+    status: 410
+notes: >-
+  No machine-readable discovery documents are published under /.well-known/.
+  All probed paths return HTTP 410 Gone. Cars24 is a consumer auto-tech
+  marketplace with no public developer API surface; a human-readable llms.txt
+  (saved verbatim in llms/) and a bug-bounty security page are the only
+  agent/security-facing surfaces found.
