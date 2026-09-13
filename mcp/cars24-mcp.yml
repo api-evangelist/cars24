@@ -1,0 +1,23 @@
+generated: '2026-09-11'
+method: probed
+source: https://mcp.cars24.com/
+status: published
+server:
+  name: cars24
+  transport: http
+  url: https://mcp.cars24.com/
+deployment:
+  mode: remote
+  endpoint: https://mcp.cars24.com/
+  verified: probed
+  probe: live
+  checked: '2026-09-11'
+  source: docs-check 2026-09-12 (endpoint found in the provider's own documentation, then probed)
+tools_count: 2
+tools:
+- name: search_used_cars
+  description: ''
+- name: search_new_cars_cars24
+  description: ''
+tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
+authorship: provider
