@@ -2,20 +2,25 @@ generated: '2026-07-18'
 method: searched
 source: live probes of https://www.cars24.com/.well-known/*
 host: https://www.cars24.com
-documents:
-  - path: /.well-known/security.txt          # RFC 9116
+notes: No machine-readable discovery documents are published under /.well-known/. All probed paths return
+  HTTP 410 Gone. Cars24 is a consumer auto-tech marketplace with no public developer API surface; a human-readable
+  llms.txt (saved verbatim in llms/) and a bug-bounty security page are the only agent/security-facing
+  surfaces found.
+hosts:
+- host: https://www.cars24.com
+  documents:
+  - path: /.well-known/security.txt
     status: 410
-  - path: /.well-known/openid-configuration   # OIDC discovery
+  - path: /.well-known/openid-configuration
     status: 410
-  - path: /.well-known/oauth-authorization-server  # RFC 8414
+  - path: /.well-known/oauth-authorization-server
     status: 410
-  - path: /.well-known/api-catalog            # RFC 9727
+  - path: /.well-known/api-catalog
     status: 410
-  - path: /.well-known/ai-plugin.json         # OpenAI plugin manifest
+  - path: /.well-known/ai-plugin.json
     status: 410
-notes: >-
-  No machine-readable discovery documents are published under /.well-known/.
-  All probed paths return HTTP 410 Gone. Cars24 is a consumer auto-tech
-  marketplace with no public developer API surface; a human-readable llms.txt
-  (saved verbatim in llms/) and a bug-bounty security page are the only
-  agent/security-facing surfaces found.
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
