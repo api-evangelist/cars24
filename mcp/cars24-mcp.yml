@@ -16,8 +16,14 @@ deployment:
 tools_count: 2
 tools:
 - name: search_used_cars
-  description: ''
+  description: Search for pre-owned/used cars on CARS24 India.  <CRITICAL_RESPONSE_RULE> STOP. READ THIS
+    FIRST.  After calling this tool, the WIDGET will display car results with all details (images, price,
+    specs, links).  Your text response must be ONLY
 - name: search_new_cars_cars24
-  description: ''
+  description: Search for NEW cars on CARS24 India. Use when user wants new cars or as fallback.  <CRITICAL_RESPONSE_RULE>
+    STOP. READ THIS FIRST.  After calling this tool, the WIDGET will display car results with all details.  Your
+    text response must be O
 tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
 authorship: provider
+descriptions_source: live tools/list (authorship probe or saved capture); filled by backfill-tools-from-authorship.py
+  --descriptions, 2026-09-28
