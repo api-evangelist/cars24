@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "cars24",
+    "captured_at": "2026-10-11T184145",
+    "source_url": "https://www.cars24.com",
+    "source_type": "Website",
+    "file": "cars24-2026-10-11T184145.png",
+    "bytes": 442137,
+    "capture": "playwright-local"
+  }
+]
