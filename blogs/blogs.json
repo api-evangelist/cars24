@@ -5,7 +5,7 @@
       "source": "https://www.cars24.com/news/",
       "feed_url": "https://www.cars24.com/news/rss/",
       "title": "",
-      "saved": 6,
+      "saved": 0,
       "method": "discovered"
     },
     {
@@ -16,6 +16,13 @@
       "method": "none"
     },
     {
+      "source": "https://www.cars24.com/news/rss/",
+      "feed_url": "https://www.cars24.com/news/rss/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://www.cars24.com/about-us/",
       "feed_url": "https://www.cars24.com/about-us/",
       "title": "",
@@ -23,6 +30,6 @@
       "method": "none"
     }
   ],
-  "post_count": 6,
-  "fetched": "2026-10-10T13:15:00Z"
+  "post_count": 7,
+  "fetched": "2026-10-17T14:53:57Z"
 }
